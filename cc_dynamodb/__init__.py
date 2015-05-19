@@ -149,7 +149,7 @@ def get_table_index(table_name, index_name):
 def get_connection(discover_credentials=False):
     """Returns a DynamoDBConnection even if credentials are invalid."""
     if discover_credentials:
-        return boto.get_dynamodb()
+        return boto.connect_dynamodb()
 
     config = get_config()
 
