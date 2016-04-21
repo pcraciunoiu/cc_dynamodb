@@ -1,6 +1,7 @@
 import factory.fuzzy
 from schematics import types as fields
 
+from cc_dynamodb3.fields import DynamoDBMapField
 from cc_dynamodb3.models import DynamoDBModel
 
 from .base import BaseFactory
